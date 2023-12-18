@@ -1,0 +1,8 @@
+velocitor:
+  environment:
+    workspaceDirectory: Velocitor
+    modelDirectory: models
+    templateDirectory: templates
+spring:
+  main:
+    banner-mode: off

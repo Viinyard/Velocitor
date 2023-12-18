@@ -84,30 +84,23 @@
         </dependencies>
     </dependencyManagement>
 
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.antlr</groupId>
-                <artifactId>antlr4-maven-plugin</artifactId>
-                <version>4.7.1</version>
-                <configuration>
-                    <visitor>false</visitor>
-                    <listener>false</listener>
-                </configuration>
                 <executions>
                     <execution>
-                        <goals>
-                            <goal>antlr4</goal>
-                        </goals>
+                        <configuration>
+                            <mainClass>pro.vinyard.velocitor.VelocitorApplication</mainClass>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
+
     <repositories>
         <repository>
             <id>spring-milestones</id>
